@@ -11,6 +11,10 @@ For anyone wondering how to configure rounded window corners, see [configuration
 
 i3-rounded is a fork of i3-gaps that adds rounding to window corners. It was originally made by [resloved](https://github.com/resloved) and this repo strives to keep it (hopefully) up to date.
 
+## Known issues with the rounded corners
+Wine doesn't properly signal that a window (like a game) is going fullscreen, and thus we cant skip the rounding for it, causing some issues.
+A workaround is launching the game in virtual desktop mode, which will render correctly.
+
 ## What is i3-gaps
 
 i3-gaps is a fork of [i3wm](https://www.i3wm.org), a tiling window manager for X11. It is kept up to date with upstream, adding a few additional features such as gaps between windows (see below for a complete list).
